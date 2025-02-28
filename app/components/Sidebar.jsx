@@ -1,15 +1,17 @@
 import React from "react";
 
 const Sidebar = () => {
-   const navlink=[
+  const navlink = [
     {
-      id:1,
+      id: 1,
       name: "Dashboard",
-      svg:"",
-    }
-   ]
-
-   
+      
+      svg: `<svg width="22" height="25" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.15625 2.94922C4.78906 1.31641 6.73698 0.5 9 0.5C11.263 0.5 13.1966 1.31641 14.8008 2.94922C16.4336 4.55339 17.25 6.48698 17.25 8.75C17.25 11.013 16.4336 12.9609 14.8008 14.5938C13.1966 16.1979 11.263 17 9 17C6.73698 17 4.78906 16.1979 3.15625 14.5938C1.55208 12.9609 0.75 11.013 0.75 8.75C0.75 6.48698 1.55208 4.55339 3.15625 2.94922ZM13.8555 3.89453C12.5091 2.54818 10.8906 1.875 9 1.875C7.10938 1.875 5.49089 2.54818 4.14453 3.89453C2.79818 5.24089 2.125 6.85938 2.125 8.75C2.125 10.6406 2.79818 12.2591 4.14453 13.6055C5.49089 14.9518 7.10938 15.625 9 15.625C10.8906 15.625 12.5091 14.9518 13.8555 13.6055C15.2018 12.2591 15.875 10.6406 15.875 8.75C15.875 6.85938 15.2018 5.24089 13.8555 3.89453Z" fill="white"/>
+            </svg>`,
+    },
+  ];
+   console.log(navlink[0].name)
   return (
     <div className="sidebar w-[240px] h-screen bg-[#FFFFFF]  ">
       <h3 className="text-center font-extrabold  font-Nunito text-xl ml-[66px] mt-6 mr-[53.36px]">
@@ -29,7 +31,8 @@ const Sidebar = () => {
               fill="white"
             />
           </svg>
-            <p className="text-white text-sm font-semibold ">Dashboard</p>
+         
+          <p className="text-white text-sm font-semibold ">{navlink[0]?.name}</p>
         </div>
       </div>
       <div className="px-6 ">
@@ -331,7 +334,7 @@ const Sidebar = () => {
       </div>
       <div className="border border-[#E0E0E0] my-4"></div>
       <div className="px-6">
-      <div className=" rounded-md p-4 gap-4 flex items-center font-Nunito">
+        <div className=" rounded-md p-4 gap-4 flex items-center font-Nunito">
           <svg
             width="22"
             height="22"
@@ -353,8 +356,8 @@ const Sidebar = () => {
           </p>
         </div>
       </div>
-       <div className="px-6">
-       <div className=" rounded-md p-4 gap-4 flex items-center font-Nunito">
+      <div className="px-6">
+        <div className=" rounded-md p-4 gap-4 flex items-center font-Nunito">
           <svg
             width="22"
             height="22"
@@ -375,9 +378,7 @@ const Sidebar = () => {
             Logout
           </p>
         </div>
-       </div>
-      
-      
+      </div>
     </div>
   );
 };

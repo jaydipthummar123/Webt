@@ -1,12 +1,115 @@
 import React from "react";
 
 const Inbox = () => {
+  const emails = [
+    {
+      id: 1,
+      name: "Jullu Jalal",
+      tag: "Primary",
+      tagColor: "bg-teal-100 text-teal-600",
+      subject: "Our Bachelor of Commerce program is ACBSP-accredited.",
+      time: "8:38 AM",
+      checked: true,
+      starred: false,
+    },
+    {
+      id: 2,
+      name: "Minerva Barnett",
+      tag: "Work",
+      tagColor: "bg-orange-100 text-orange-600",
+      subject: "Get Best Advertiser In Your Side Pocket",
+      time: "8:13 AM",
+      checked: true,
+      starred: false,
+    },
+    {
+      id: 3,
+      name: "Peter Lewis",
+      tag: "Friends",
+      tagColor: "bg-pink-100 text-pink-600",
+      subject: "Vacation Home Rental Success",
+      time: "7:52 PM",
+      checked: false,
+      starred: false,
+    },
+    {
+      id: 4,
+      name: "Anthony Briggs",
+      tag: "",
+      tagColor: "",
+      subject: "Free Classifieds Using Them To Promote Your Stuff Online",
+      time: "7:52 PM",
+      checked: true,
+      starred: true,
+    },
+    {
+      id: 5,
+      name: "Clifford Morgan",
+      tag: "Social",
+      tagColor: "bg-blue-100 text-blue-600",
+      subject: "Enhance Your Brand Potential With Giant Advertising Blimps",
+      time: "4:13 PM",
+      checked: false,
+      starred: false,
+    },
+    {
+      id: 6,
+      name: "Cecilia Webster",
+      tag: "Friends",
+      tagColor: "bg-pink-100 text-pink-600",
+      subject: "Always Look On The Bright Side Of Life",
+      time: "3:52 PM",
+      checked: false,
+      starred: false,
+    },
+    {
+      id: 7,
+      name: "Harvey Manning",
+      tag: "",
+      tagColor: "bg-teal-100 text-teal-600",
+      subject: "Curling Irons Are As Individual As The Women Who Use Them",
+      time: "8:38 AM",
+      checked: false,
+      starred: true,
+    },
+    {
+      id: 8,
+      name: "Willie Blake",
+      tag: "Primary",
+      tagColor: "bg-teal-100 text-teal-600",
+      subject: "Our Bachelor of Commerce program is ACBSP-accredited.",
+      time: "2:30 PM",
+      checked: false,
+      starred: false,
+    },
+    {
+      id: 9,
+      name: "Minerva Barnett",
+      tag: "Work",
+      tagColor: "bg-orange-100 text-orange-600",
+      subject: "Curling Irons Are As Individual As The Women Who Use Them",
+      time: "2:30 PM",
+      checked: true,
+      starred: false,
+    },
+
+    {
+      id: 9,
+      name: "Minerva Barnett",
+      tag: "Work",
+      tagColor: "bg-orange-100 text-orange-600",
+      subject: "Curling Irons Are As Individual As The Women Who Use Them",
+      time: "2:30 PM",
+      checked: true,
+      starred: false,
+    },
+  ];
   return (
     <>
       <div className="w-full bg-[#F5F6FA] min-h-screen p-[30px]">
         <h1 className="text-[32px] font-bold text-[#202224]">Inbox</h1>
         <div className="flex  flex-wrap mt-6">
-          <div className="compose border border-[#B9B9B9] rounded-[14px] bg-[#FFFFFF] p-6">
+          <div className="compose border border-[#B9B9B9] rounded-[14px] bg-[#FFFFFF] p-6 mx-auto">
             <div className="bg-[#4880FF] py-3 px-[83px] rounded-lg">
               <h1 className="font-Nunito font-bold text-sm text-white">
                 {" "}
@@ -310,77 +413,330 @@ const Inbox = () => {
               </div>
             </div>
           </div>
-          <div className="searchmailbox  bg-white rounded-[14px] border border-[#B9B9B9] mx-auto ">
-            <div className="px-6 pt-6  flex ">
-              <div className=" bg-[#F5F6FA] flex items-center px-4 py-3 rounded-full w-[332px]">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g opacity="0.5">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M9.69355 12.5352C12.4234 11.375 13.6959 8.22157 12.5357 5.49174C11.3756 2.7619 8.2221 1.48942 5.49227 2.64957C2.76243 3.80972 1.48995 6.96318 2.6501 9.69302C3.81025 12.4229 6.96372 13.6953 9.69355 12.5352Z"
-                      stroke="black"
-                      strokeWidth="1.2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M11.3902 11.3896L15.5556 15.5555"
-                      stroke="black"
-                      strokeWidth="1.2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                </svg>
-                <input
-                  type="text"
-                  placeholder=" Search mail"
-                  className="bg-[#F5F6FA] focus:outline-none w-full pl-2 text-sm"
-                />
-              </div>
-              <div className="ml-[323px] flex  border border-[#979797] bg-[#FAFBFD] ">
-                <div className=" my-3 mx-[14px] border-r " >
+          {/* <div className="searchmailbox mx-auto ">
+            <div className="bg-white rounded-[14px] border border-[#B9B9B9] ">
+              <div className="px-6 pt-6  flex ">
+                <div className=" bg-[#F5F6FA] flex items-center px-4 py-3 rounded-full w-[332px]">
                   <svg
                     width="16"
                     height="16"
-                    viewBox="0 0 16 16"
+                    viewBox="0 0 17 17"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M14.2222 0H1.76889C0.786667 0 0.00888889 0.795556 0.00888889 1.77778L0 14.2222C0 15.2044 0.786667 16 1.76889 16H14.2222C15.2044 16 16 15.2044 16 14.2222V1.77778C16 0.795556 15.2044 0 14.2222 0ZM14.2222 10.6667H10.6667C10.6667 12.1378 9.47111 13.3333 8 13.3333C6.52889 13.3333 5.33333 12.1378 5.33333 10.6667H1.76889V1.77778H14.2222V10.6667ZM9.77778 6.22222H11.5556L8 9.77778L4.44444 6.22222H6.22222V3.55556H9.77778V6.22222Z"
-                      fill="#202224"
-                    />
+                    <g opacity="0.5">
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M9.69355 12.5352C12.4234 11.375 13.6959 8.22157 12.5357 5.49174C11.3756 2.7619 8.2221 1.48942 5.49227 2.64957C2.76243 3.80972 1.48995 6.96318 2.6501 9.69302C3.81025 12.4229 6.96372 13.6953 9.69355 12.5352Z"
+                        stroke="black"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M11.3902 11.3896L15.5556 15.5555"
+                        stroke="black"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </g>
                   </svg>
+                  <input
+                    type="text"
+                    placeholder=" Search mail"
+                    className="bg-[#F5F6FA] focus:outline-none w-full pl-2 text-sm"
+                  />
                 </div>
-                <div className="my-3 mx-[14px]">
-                 
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8C0 12.416 3.584 16 8 16C12.416 16 16 12.416 16 8C16 3.584 12.416 0 8 0ZM7.2 12V7.2H8.8V12H7.2ZM7.2 4V5.6H8.8V4H7.2Z" fill="#202224"/>
-</svg>
-
+                <div className="ml-[323px] flex border border-[#979797] bg-[#FAFBFD] divide-x divide-[#979797]">
+                  <div className="p-3 flex items-center">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M14.2222 0H1.76889C0.786667 0 0.00888889 0.795556 0.00888889 1.77778L0 14.2222C0 15.2044 0.786667 16 1.76889 16H14.2222C15.2044 16 16 15.2044 16 14.2222V1.77778C16 0.795556 15.2044 0 14.2222 0ZM14.2222 10.6667H10.6667C10.6667 12.1378 9.47111 13.3333 8 13.3333C6.52889 13.3333 5.33333 12.1378 5.33333 10.6667H1.76889V1.77778H14.2222V10.6667ZM9.77778 6.22222H11.5556L8 9.77778L4.44444 6.22222H6.22222V3.55556H9.77778V6.22222Z"
+                        fill="#202224"
+                      />
+                    </svg>
+                  </div>
+                  <div className="p-3 flex items-center">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M8 0C3.584 0 0 3.584 0 8C0 12.416 3.584 16 8 16C12.416 16 16 12.416 16 8C16 3.584 12.416 0 8 0ZM7.2 12V7.2H8.8V12H7.2ZM7.2 4V5.6H8.8V4H7.2Z"
+                        fill="#202224"
+                      />
+                    </svg>
+                  </div>
+                  <div className="p-3 flex items-center">
+                    <svg
+                      width="13"
+                      height="16"
+                      viewBox="0 0 13 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M9.33333 0.888889H12.4444V2.66667H0V0.888889H3.11111L4 0H8.44444L9.33333 0.888889ZM2.66667 16C1.68889 16 0.888889 15.2 0.888889 14.2222V3.55556H11.5556V14.2222C11.5556 15.2 10.7556 16 9.77778 16H2.66667Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </div>
                 </div>
-                <div className="my-3 mx-[14px]">
-              
-<svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.33333 0.888889H12.4444V2.66667H0V0.888889H3.11111L4 0H8.44444L9.33333 0.888889ZM2.66667 16C1.68889 16 0.888889 15.2 0.888889 14.2222V3.55556H11.5556V14.2222C11.5556 15.2 10.7556 16 9.77778 16H2.66667Z" fill="black"/>
-</svg>
-
+              </div>
+             
+              <div className="divide-y mt-8 bg-[#4880FF] bg-opacity-5 font-Nunito ">
+                {emails.map((email) => (
+                  <div
+                    key={email.id}
+                    className="flex items-center px-5 pt-6 pb-[22px] hover:bg-gray-100 "
+                  >
+                    <input
+                      type="checkbox"
+                      checked={email.checked}
+                      className="w-5 h-5 border-2 border-gray-400 rounded focus:ring-2 focus:ring-teal-400 bg-black"
+                    />
+                    <button className="ml-3 text-xl">
+                      {email.starred ? "⭐" : "☆"}
+                    </button>
+                    <p className="ml-3 font-bold mr-[84px] font-Nunito text-sm">
+                      {email.name}
+                    </p>
+                    {email.tag && (
+                      <span
+                        className={`px-3 py-1 text-xs font-medium rounded ${email.tagColor}`}
+                      >
+                        {email.tag}
+                      </span>
+                    )}
+                    <p className="ml-4 text-gray-600 flex-1">{email.subject}</p>
+                    <p className="ml-auto text-sm text-gray-500">
+                      {email.time}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-6 flex items-center justify-between">
+              <p className="text-sm font-Nunito text-black text-opacity-60 ">
+                Showing 1-12 of 1,253
+              </p>
+              <div className="flex border border-[#D5D5D5] rounded-lg">
+                <div className="flex divide-x divide-[#D5D5D5]">
+                  <div className="p-2 flex items-center">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.6">
+                        <path
+                          d="M15.41 16.4064L10.83 12L15.41 7.59359L14 6.23999L8 12L14 17.76L15.41 16.4064Z"
+                          fill="#202224"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="p-2 flex items-center">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.9">
+                        <path
+                          d="M8.59 16.4064L13.17 12L8.59 7.59359L10 6.23999L16 12L10 17.76L8.59 16.4064Z"
+                          fill="#202224"
+                        />
+                      </g>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-      
+          </div> */}
+          <div className="searchmailbox mx-auto px-4">
+  <div className="bg-white rounded-[14px] border border-[#B9B9B9]">
+    <div className="px-6 pt-6 flex flex-wrap items-center gap-4 justify-between">
+      {/* Search Input */}
+      <div className="bg-[#F5F6FA] flex items-center px-4 py-3 rounded-full w-full sm:w-[332px]">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 17 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.5">
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M9.69355 12.5352C12.4234 11.375 13.6959 8.22157 12.5357 5.49174C11.3756 2.7619 8.2221 1.48942 5.49227 2.64957C2.76243 3.80972 1.48995 6.96318 2.6501 9.69302C3.81025 12.4229 6.96372 13.6953 9.69355 12.5352Z"
+              stroke="black"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M11.3902 11.3896L15.5556 15.5555"
+              stroke="black"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+        </svg>
+        <input
+          type="text"
+          placeholder="Search mail"
+          className="bg-[#F5F6FA] focus:outline-none w-full pl-2 text-sm"
+        />
+      </div>
+      {/* Icon Controls */}
+      <div className="flex border border-[#979797] bg-[#FAFBFD] divide-x divide-[#979797] rounded-md">
+        <div className="p-3 flex items-center">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M14.2222 0H1.76889C0.786667 0 0.00888889 0.795556 0.00888889 1.77778L0 14.2222C0 15.2044 0.786667 16 1.76889 16H14.2222C15.2044 16 16 15.2044 16 14.2222V1.77778C16 0.795556 15.2044 0 14.2222 0ZM14.2222 10.6667H10.6667C10.6667 12.1378 9.47111 13.3333 8 13.3333C6.52889 13.3333 5.33333 12.1378 5.33333 10.6667H1.76889V1.77778H14.2222V10.6667ZM9.77778 6.22222H11.5556L8 9.77778L4.44444 6.22222H6.22222V3.55556H9.77778V6.22222Z"
+              fill="#202224"
+            />
+          </svg>
+        </div>
+        <div className="p-3 flex items-center">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M8 0C3.584 0 0 3.584 0 8C0 12.416 3.584 16 8 16C12.416 16 16 12.416 16 8C16 3.584 12.416 0 8 0ZM7.2 12V7.2H8.8V12H7.2ZM7.2 4V5.6H8.8V4H7.2Z"
+              fill="#202224"
+            />
+          </svg>
+        </div>
+        <div className="p-3 flex items-center">
+          <svg
+            width="13"
+            height="16"
+            viewBox="0 0 13 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M9.33333 0.888889H12.4444V2.66667H0V0.888889H3.11111L4 0H8.44444L9.33333 0.888889ZM2.66667 16C1.68889 16 0.888889 15.2 0.888889 14.2222V3.55556H11.5556V14.2222C11.5556 15.2 10.7556 16 9.77778 16H2.66667Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    {/* Email List */}
+    <div className="divide-y mt-8 bg-[#4880FF] bg-opacity-5 font-Nunito">
+      {emails.map((email) => (
+        <div
+          key={email.id}
+          className="flex flex-wrap items-center px-5 pt-6 pb-[22px] hover:bg-gray-100"
+        >
+          <input
+            type="checkbox"
+            checked={email.checked}
+            className="w-5 h-5 border-2 border-gray-400 rounded focus:ring-2 focus:ring-teal-400 bg-black"
+          />
+          <button className="ml-3 text-xl">
+            {email.starred ? "⭐" : "☆"}
+          </button>
+          <p className="ml-3 font-bold mr-4 sm:mr-[84px] font-Nunito text-sm">
+            {email.name}
+          </p>
+          {email.tag && (
+            <span
+              className={`px-3 py-1 text-xs font-medium rounded ${email.tagColor}`}
+            >
+              {email.tag}
+            </span>
+          )}
+          <p className="ml-4 text-gray-600 flex-1">{email.subject}</p>
+          <p className="ml-auto text-sm text-gray-500">{email.time}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+  <div className="mt-6 flex flex-wrap items-center justify-between">
+    <p className="text-sm font-Nunito text-black text-opacity-60">
+      Showing 1-12 of 1,253
+    </p>
+    <div className="flex border border-[#D5D5D5] rounded-lg">
+      <div className="flex divide-x divide-[#D5D5D5]">
+        <div className="p-2 flex items-center">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.6">
+              <path
+                d="M15.41 16.4064L10.83 12L15.41 7.59359L14 6.23999L8 12L14 17.76L15.41 16.4064Z"
+                fill="#202224"
+              />
+            </g>
+          </svg>
+        </div>
+        <div className="p-2 flex items-center">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.9">
+              <path
+                d="M8.59 16.4064L13.17 12L8.59 7.59359L10 6.23999L16 12L10 17.76L8.59 16.4064Z"
+                fill="#202224"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
         </div>
       </div>
