@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../app/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+}
+
+.rounded-table {
+  border-collapse: separate; /* Ensures border-radius works */
+  border-spacing: 0; /* Removes unwanted spacing */
+  border-radius: 10px; /* Overall table rounding */
+  overflow: hidden; /* Ensures content doesn’t overflow */
+}
+
+.rounded-table thead tr th:first-child {
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.rounded-table thead tr th:last-child {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+
+
+
+
+html,
+body {
+  /* @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  } */
+}
