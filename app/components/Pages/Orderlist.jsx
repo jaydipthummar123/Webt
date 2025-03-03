@@ -89,11 +89,11 @@ const Orderlist = () => {
         <h1 className="text-[32px] font-bold text-[#202224] mb-6 font-Nunito">
           Order Lists
         </h1>
-        <div className="overflow-x-auto font-Nunito font-bold text-[#202224]">
-          <table className="border border-gray-300 bg-[#F9F9FB] w-auto rounded-[10px]">
+        <div className="overflow-x-auto font-Nunito font-bold text-[#202224] border border-gray-300 w-fit rounded-[10px]">
+          <table className=" bg-[#F9F9FB] w-auto rounded-[10px]">
             <tbody>
               <tr>
-                <td className="border-r border-gray-300 p-6 ">
+                <td className="border-r border-gray-300 p-6  first:rounded-tl-[14px] last:rounded-tr-[14px]">
                   <div className="flex items-center">
                     <svg
                       width="22"
@@ -168,16 +168,16 @@ const Orderlist = () => {
           </table>
         </div>
         <div className="mt-6">
-          <div className="overflow-x-auto font-Nunito">
+          <div className="overflow-x-auto font-Nunito border border-[#D5D5D5] rounded-[14px]">
             <table className="w-full  bg-white rounded-lg ">
               <thead className="bg-[#FCFDFD] text-[#202224] uppercase text-sm  ">
                 <tr>
-                  <th className="px-[31px] py-4 text-left   first:rounded-tl-[14px] last:rounded-tr-[14px]">ID</th>
+                  <th className="px-[31px] py-4 text-left ">ID</th>
                   <th className="px-4 py-3 text-left">Name</th>
                   <th className="px-4 py-3 text-left">Address</th>
                   <th className="px-4 py-3 text-left">Date</th>
                   <th className="px-4 py-3 text-left">Type</th>
-                  <th className="px-4 py-3 text-left first:rounded-tl-[14px] last:rounded-tr-[14px]">Status</th>
+                  <th className="px-4 py-3 text-left ">Status</th>
                 </tr>
               </thead>
               <tbody className="text-[#202224] overflow-y-auto">
@@ -204,46 +204,46 @@ const Orderlist = () => {
           </div>
         </div>
         <div className="mt-6 flex flex-wrap items-center justify-between">
-              <p className="text-sm font-Nunito text-black text-opacity-60">
-              Showing 1-09 of 78
-              </p>
-              <div className="flex border border-[#D5D5D5] rounded-lg">
-                <div className="flex divide-x divide-[#D5D5D5]">
-                  <div className="p-2 flex items-center">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g opacity="0.6">
-                        <path
-                          d="M15.41 16.4064L10.83 12L15.41 7.59359L14 6.23999L8 12L14 17.76L15.41 16.4064Z"
-                          fill="#202224"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div className="p-2 flex items-center">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g opacity="0.9">
-                        <path
-                          d="M8.59 16.4064L13.17 12L8.59 7.59359L10 6.23999L16 12L10 17.76L8.59 16.4064Z"
-                          fill="#202224"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
+          <p className="text-sm font-Nunito text-black text-opacity-60">
+            Showing 1-09 of 78
+          </p>
+          <div className="flex border border-[#D5D5D5] rounded-lg">
+            <div className="flex divide-x divide-[#D5D5D5]">
+              <div className="p-2 flex items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.6">
+                    <path
+                      d="M15.41 16.4064L10.83 12L15.41 7.59359L14 6.23999L8 12L14 17.76L15.41 16.4064Z"
+                      fill="#202224"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="p-2 flex items-center">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.9">
+                    <path
+                      d="M8.59 16.4064L13.17 12L8.59 7.59359L10 6.23999L16 12L10 17.76L8.59 16.4064Z"
+                      fill="#202224"
+                    />
+                  </g>
+                </svg>
               </div>
             </div>
+          </div>
+        </div>
       </div>
     </div>
   );
