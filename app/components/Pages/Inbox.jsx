@@ -578,7 +578,7 @@ const Inbox = () => {
           <div className="searchmailbox mx-auto px-4">
             <div className="bg-white rounded-[14px] border border-[#B9B9B9]">
               <div className="px-6 pt-6 flex flex-wrap items-center gap-4 justify-between">
-                {/* Search Input */}
+           
                 <div className="bg-[#F5F6FA] flex items-center px-4 py-3 rounded-full w-full sm:w-[332px]">
                   <svg
                     width="16"
@@ -612,7 +612,7 @@ const Inbox = () => {
                     className="bg-[#F5F6FA] focus:outline-none w-full pl-2 text-sm"
                   />
                 </div>
-                {/* Icon Controls */}
+           
                 <div className="flex border border-[#979797] bg-[#FAFBFD] divide-x divide-[#979797] rounded-md">
                   <div className="p-3 flex items-center">
                     <svg
@@ -664,7 +664,7 @@ const Inbox = () => {
                   </div>
                 </div>
               </div>
-              {/* Email List */}
+          
               <div className="divide-y mt-8 bg-[#4880FF] bg-opacity-5 font-Nunito">
                 {emails.map((email) => (
                   <div
