@@ -16,11 +16,15 @@
 //   );
 // }
 import Header from "../components/Header";
+import Calender from "../components/Pages/Calender";
 import Dashboard from "../components/Pages/Dashboard";
 import Favorites from "../components/Pages/Favorites";
 import Inbox from "../components/Pages/Inbox";
 import Orderlist from "../components/Pages/Orderlist";
 import Products from "../components/Pages/Products";
+import ProductStock from "../components/Pages/ProductStock";
+
+
 import Sidebar from "../components/Sidebar";
 
 export default function Index() {
@@ -33,11 +37,13 @@ export default function Index() {
       {/* Main Content */}
       <div className="flex-grow overflow-hidden">
         <Header />
-        {/* <Dashboard />
-        <Products/>
-        <Favorites/> */}
+        {/* {/* <Dashboard /> */}
+        {/* <Products/>
+        <Favorites/>  */}
         {/* <Inbox></Inbox> */}
-        <Orderlist/>
+        {/* <Orderlist/> */}
+        {/* <ProductStock/> */}
+        {/* <Calender/> */}
 {/* 
         <div className="relative bg-[#D4D4D4] overflow-hidden min-h-screen">
           {/* Scrollable Content */}
