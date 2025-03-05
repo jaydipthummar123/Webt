@@ -2,7 +2,7 @@ import React from "react";
 import im1 from "../../images/Image (6).png";
 import im2 from "../../images/Man Image.png";
 import im3 from "../../images/Man Image (1).png";
-import CalendarComponent from "../Calendercom";
+import CalendarComponent from "./Calendercom";
 
 const Calender = () => {
   return (
@@ -128,8 +128,7 @@ const Calender = () => {
             </div>
           </div>
         </div>
-
-        <div className="">
+        <div className="mx-auto">
           <CalendarComponent />
         </div>
       </div>

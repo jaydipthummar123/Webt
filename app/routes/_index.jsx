@@ -29,6 +29,7 @@ import Sidebar from "../components/Sidebar";
 
 export default function Index() {
   return (
+    
     <div className="flex min-h-screen">
       {/* Sidebar - Hidden on small screens */}
       <div className="max-md:hidden">
@@ -37,7 +38,7 @@ export default function Index() {
       {/* Main Content */}
       <div className="flex-grow overflow-hidden">
         <Header />
-        {/* {/* <Dashboard /> */}
+       <Dashboard />
         {/* <Products/>
         <Favorites/>  */}
         {/* <Inbox></Inbox> */}
